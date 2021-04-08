@@ -1,0 +1,18 @@
+syntax = "proto3";
+option go_package = "./person";
+
+package person;
+
+message Address {
+  int32 houseNumber = 1;
+  string street = 2;
+  string town = 3;
+  string postcode = 4;
+}
+
+message Person {
+  string fname = 1;
+  string lname = 2;
+  int32 age = 3;
+  Address address = 4;
+}
