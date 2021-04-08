@@ -6,21 +6,20 @@ import (
 	"os"
 
 	// PROTO PACKAGES
-	"./book"
-	"./enums"
-	"./person"
+	"./src/book"
+	"./src/enums"
+	"./src/person"
 
 	// EXTERNAL PACKAGES
-	"github.com/golang/protobuf/jsonpb"
+	"github.com/golang/protobuf/jsonpb" // apparantly this is outdated
 	"google.golang.org/protobuf/proto"
 )
 
 func main() {
 
-	// personReadsBook()
-	// readWritePerson()
-	// jsonToFrom()
-
+	personReadsBook()
+	readWritePerson()
+	jsonToFrom()
 	doEnum()
 
 }
