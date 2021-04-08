@@ -5,10 +5,12 @@ import (
 	"log"
 	"os"
 
-	// EXTERNAL PACKAGES
+	// PROTO PACKAGES
 	"./book"
 	"./enums"
 	"./person"
+
+	// EXTERNAL PACKAGES
 	"github.com/golang/protobuf/jsonpb"
 	"google.golang.org/protobuf/proto"
 )
